@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+#hp  {
+float: left;    
+ margin: 0 15px 0 0;
+}
+#hpp {
+    float: right;
+    margin: 0 0 15px 0;
+}
+#small-image {
+    height: 20%;
+}

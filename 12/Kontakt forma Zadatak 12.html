@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dražen Pomper">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Kontakt forma</title>
+    <style>
+        body { margin: 1em; }
+        form { width: 300px; }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <div class="form-group">
+            <label for="fname">Ime</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name.." class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="lname">Prezime</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last natme.." class="form-control" required>
+        </div>
+        <div class="form-group">	
+            <label for="email">Vaš E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="Your e-mail.." class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Država</label>
+            <select id="country" name="country" class="form-control">
+                <option value="">Molimo izaberite</option>
+                <option value="BE">Belgiija</option>
+                <option value="HR" selected>Hrvatska</option>
+                <option value="LU">Luxemburg</option>
+                <option value="HU">Mađarska</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Poruka</label>
+            <textarea id="message" name="message" placeholder="Write something..." class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-default" value="Send"> 
+            <input type="reset" class="btn btn-default" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
